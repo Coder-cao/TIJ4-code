@@ -1,4 +1,4 @@
-//: concurrency/SerialNumberChecker.java
+package concurrency;//: concurrency/SerialNumberChecker.java
 // Operations that may seem safe are not,
 // when threads are present.
 // {Args: 4}

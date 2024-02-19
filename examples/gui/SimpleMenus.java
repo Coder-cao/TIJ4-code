@@ -1,4 +1,4 @@
-//: gui/SimpleMenus.java
+package gui;//: gui/SimpleMenus.java
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.*;

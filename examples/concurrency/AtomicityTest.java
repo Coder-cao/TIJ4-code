@@ -1,4 +1,4 @@
-//: concurrency/AtomicityTest.java
+package concurrency;//: concurrency/AtomicityTest.java
 import java.util.concurrent.*;
 
 public class AtomicityTest implements Runnable {

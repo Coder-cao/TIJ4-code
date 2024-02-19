@@ -1,4 +1,4 @@
-//: exceptions/Switch.java
+package exceptions;//: exceptions/Switch.java
 import static net.mindview.util.Print.*;
 
 public class Switch {

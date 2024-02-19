@@ -1,4 +1,4 @@
-//: arrays/AssemblingMultidimensionalArrays.java
+package arrays;//: arrays/AssemblingMultidimensionalArrays.java
 // Creating multidimensional arrays.
 import java.util.*;
 

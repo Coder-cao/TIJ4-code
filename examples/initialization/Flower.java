@@ -1,4 +1,4 @@
-//: initialization/Flower.java
+package initialization;//: initialization/Flower.java
 // Calling constructors with "this"
 import static net.mindview.util.Print.*;
 

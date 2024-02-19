@@ -1,4 +1,4 @@
-//: reusing/Wind.java
+package reusing;//: reusing/Wind.java
 // Inheritance & upcasting.
 
 class Instrument {

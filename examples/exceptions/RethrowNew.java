@@ -1,4 +1,4 @@
-//: exceptions/RethrowNew.java
+package exceptions;//: exceptions/RethrowNew.java
 // Rethrow a different object from the one that was caught.
 
 class OneException extends Exception {

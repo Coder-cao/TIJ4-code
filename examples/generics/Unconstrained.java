@@ -1,4 +1,4 @@
-//: generics/Unconstrained.java
+package generics;//: generics/Unconstrained.java
 
 class Other {}
 class BasicOther extends BasicHolder<Other> {}

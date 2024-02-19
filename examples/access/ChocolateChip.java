@@ -1,7 +1,10 @@
+package access;
+
+import access.dessert.Cookie;
+
 //: access/ChocolateChip.java
 // Can't use package-access member from another package.
-import access.dessert.*;
-
+//import access.dessert.*;
 public class ChocolateChip extends Cookie {
   public ChocolateChip() {
    System.out.println("ChocolateChip constructor");

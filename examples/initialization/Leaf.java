@@ -1,4 +1,4 @@
-//: initialization/Leaf.java
+package initialization;//: initialization/Leaf.java
 // Simple use of the "this" keyword.
 
 public class Leaf {

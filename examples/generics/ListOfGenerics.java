@@ -1,4 +1,4 @@
-//: generics/ListOfGenerics.java
+package generics;//: generics/ListOfGenerics.java
 import java.util.*;
 
 public class ListOfGenerics<T> {

@@ -1,4 +1,4 @@
-//: initialization/VarargType.java
+package initialization;//: initialization/VarargType.java
 
 public class VarargType {
   static void f(Character... args) {

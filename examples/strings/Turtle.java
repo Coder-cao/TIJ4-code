@@ -1,4 +1,4 @@
-//: strings/Turtle.java
+package strings;//: strings/Turtle.java
 import java.io.*;
 import java.util.*;
 

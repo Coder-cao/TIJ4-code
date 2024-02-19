@@ -1,4 +1,4 @@
-//: strings/Immutable.java
+package strings;//: strings/Immutable.java
 import static net.mindview.util.Print.*;
 
 public class Immutable {

@@ -1,4 +1,4 @@
-//: strings/ReplacingStringTokenizer.java
+package strings;//: strings/ReplacingStringTokenizer.java
 import java.util.*;
 
 public class ReplacingStringTokenizer {

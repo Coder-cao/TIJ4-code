@@ -1,4 +1,4 @@
-//: concurrency/NotifyVsNotifyAll.java
+package concurrency;//: concurrency/NotifyVsNotifyAll.java
 import java.util.concurrent.*;
 import java.util.*;
 

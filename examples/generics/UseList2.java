@@ -1,4 +1,4 @@
-//: generics/UseList2.java
+package generics;//: generics/UseList2.java
 import java.util.*;
 
 public class UseList2<W,T> {

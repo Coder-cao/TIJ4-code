@@ -1,4 +1,4 @@
-//: reusing/BlankFinal.java
+package reusing;//: reusing/BlankFinal.java
 // "Blank" final fields.
 
 class Poppet {

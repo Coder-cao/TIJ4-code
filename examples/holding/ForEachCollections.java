@@ -1,4 +1,4 @@
-//: holding/ForEachCollections.java
+package holding;//: holding/ForEachCollections.java
 // All collections work with foreach.
 import java.util.*;
 

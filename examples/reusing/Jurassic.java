@@ -1,4 +1,4 @@
-//: reusing/Jurassic.java
+package reusing;//: reusing/Jurassic.java
 // Making an entire class final.
 
 class SmallBrain {}

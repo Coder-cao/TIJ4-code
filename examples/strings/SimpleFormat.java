@@ -1,4 +1,4 @@
-//: strings/SimpleFormat.java
+package strings;//: strings/SimpleFormat.java
 
 public class SimpleFormat {
   public static void main(String[] args) {

@@ -1,4 +1,4 @@
-//: strings/Concatenation.java
+package strings;//: strings/Concatenation.java
 
 public class Concatenation {
   public static void main(String[] args) {

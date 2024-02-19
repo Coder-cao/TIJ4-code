@@ -1,4 +1,4 @@
-//: initialization/SimpleConstructor2.java
+package initialization;//: initialization/SimpleConstructor2.java
 // Constructors can have arguments.
 
 class Rock2 {

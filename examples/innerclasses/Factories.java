@@ -1,4 +1,4 @@
-//: innerclasses/Factories.java
+package innerclasses;//: innerclasses/Factories.java
 import static net.mindview.util.Print.*;
 
 interface Service {

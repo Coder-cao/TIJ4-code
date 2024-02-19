@@ -1,4 +1,4 @@
-//: polymorphism/CovariantReturn.java
+package polymorphism;//: polymorphism/CovariantReturn.java
 
 class Grain {
   public String toString() { return "Grain"; }

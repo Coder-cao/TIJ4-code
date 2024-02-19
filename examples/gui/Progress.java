@@ -1,4 +1,4 @@
-//: gui/Progress.java
+package gui;//: gui/Progress.java
 // Using sliders, progress bars and progress monitors.
 import javax.swing.*;
 import javax.swing.border.*;

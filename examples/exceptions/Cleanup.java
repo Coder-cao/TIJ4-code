@@ -1,4 +1,4 @@
-//: exceptions/Cleanup.java
+package exceptions;//: exceptions/Cleanup.java
 // Guaranteeing proper cleanup of a resource.
 
 public class Cleanup {

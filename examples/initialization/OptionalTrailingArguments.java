@@ -1,4 +1,4 @@
-//: initialization/OptionalTrailingArguments.java
+package initialization;//: initialization/OptionalTrailingArguments.java
 
 public class OptionalTrailingArguments {
   static void f(int required, String... trailing) {

@@ -1,4 +1,4 @@
-//: reusing/Bath.java
+package reusing;//: reusing/Bath.java
 // Constructor initialization with composition.
 import static net.mindview.util.Print.*;
 

@@ -1,4 +1,4 @@
-//: concurrency/CarBuilder.java
+package concurrency;//: concurrency/CarBuilder.java
 // A complex example of tasks working together.
 import java.util.concurrent.*;
 import java.util.*;

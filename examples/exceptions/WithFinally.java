@@ -1,4 +1,4 @@
-//: exceptions/WithFinally.java
+package exceptions;//: exceptions/WithFinally.java
 // Finally Guarantees cleanup.
 
 public class WithFinally {

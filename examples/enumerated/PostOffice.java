@@ -1,4 +1,4 @@
-//: enumerated/PostOffice.java
+package enumerated;//: enumerated/PostOffice.java
 // Modeling a post office.
 import java.util.*;
 import net.mindview.util.*;

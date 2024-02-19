@@ -1,4 +1,4 @@
-//: gui/TextFields.java
+package gui;//: gui/TextFields.java
 // Text fields and Java events.
 import javax.swing.*;
 import javax.swing.event.*;

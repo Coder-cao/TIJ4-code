@@ -1,4 +1,4 @@
-//: gui/FlowLayout1.java
+package gui;//: gui/FlowLayout1.java
 // Demonstrates FlowLayout.
 import javax.swing.*;
 import java.awt.*;

@@ -1,4 +1,4 @@
-//: typeinfo/NullRobot.java
+package typeinfo;//: typeinfo/NullRobot.java
 // Using a dynamic proxy to create a Null Object.
 import java.lang.reflect.*;
 import java.util.*;

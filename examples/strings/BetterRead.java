@@ -1,4 +1,4 @@
-//: strings/BetterRead.java
+package strings;//: strings/BetterRead.java
 import java.util.*;
 
 public class BetterRead {

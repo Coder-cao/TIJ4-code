@@ -1,4 +1,4 @@
-//: innerclasses/Parcel1.java
+package innerclasses;//: innerclasses/Parcel1.java
 // Creating inner classes.
 
 public class Parcel1 {

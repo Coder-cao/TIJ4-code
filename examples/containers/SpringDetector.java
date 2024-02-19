@@ -1,4 +1,4 @@
-//: containers/SpringDetector.java
+package containers;//: containers/SpringDetector.java
 // What will the weather be?
 import java.lang.reflect.*;
 import java.util.*;

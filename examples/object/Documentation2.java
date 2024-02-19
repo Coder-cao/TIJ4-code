@@ -1,4 +1,4 @@
-//: object/Documentation2.java
+package object;//: object/Documentation2.java
 /**
 * <pre>
 * System.out.println(new Date());

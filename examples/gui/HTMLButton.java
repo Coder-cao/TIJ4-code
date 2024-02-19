@@ -1,4 +1,4 @@
-//: gui/HTMLButton.java
+package gui;//: gui/HTMLButton.java
 // Putting HTML text on Swing components.
 import javax.swing.*;
 import java.awt.*;

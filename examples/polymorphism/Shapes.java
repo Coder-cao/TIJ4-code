@@ -1,4 +1,4 @@
-//: polymorphism/Shapes.java
+package polymorphism;//: polymorphism/Shapes.java
 // Polymorphism in Java.
 import polymorphism.shape.*;
 

@@ -1,4 +1,4 @@
-//: gui/LongRunningTask.java
+package gui;//: gui/LongRunningTask.java
 // A badly designed program.
 import javax.swing.*;
 import java.awt.*;

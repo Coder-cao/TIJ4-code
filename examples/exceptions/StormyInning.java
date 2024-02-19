@@ -1,4 +1,4 @@
-//: exceptions/StormyInning.java
+package exceptions;//: exceptions/StormyInning.java
 // Overridden methods may throw only the exceptions
 // specified in their base-class versions, or exceptions
 // derived from the base-class exceptions.

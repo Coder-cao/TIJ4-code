@@ -1,4 +1,4 @@
-//: innerclasses/GreenhouseController.java
+package innerclasses;//: innerclasses/GreenhouseController.java
 // Configure and execute the greenhouse system.
 // {Args: 5000}
 import innerclasses.controller.*;

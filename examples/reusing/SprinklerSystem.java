@@ -1,4 +1,4 @@
-//: reusing/SprinklerSystem.java
+package reusing;//: reusing/SprinklerSystem.java
 // Composition for code reuse.
 
 class WaterSource {

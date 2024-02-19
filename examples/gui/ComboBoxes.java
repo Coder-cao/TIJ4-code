@@ -1,4 +1,4 @@
-//: gui/ComboBoxes.java
+package gui;//: gui/ComboBoxes.java
 // Using drop-down lists.
 import javax.swing.*;
 import java.awt.*;

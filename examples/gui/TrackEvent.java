@@ -1,4 +1,4 @@
-//: gui/TrackEvent.java
+package gui;//: gui/TrackEvent.java
 // Show events as they happen.
 import javax.swing.*;
 import java.awt.*;

@@ -1,4 +1,4 @@
-//: innerclasses/InheritInner.java
+package innerclasses;//: innerclasses/InheritInner.java
 // Inheriting an inner class.
 
 class WithInner {

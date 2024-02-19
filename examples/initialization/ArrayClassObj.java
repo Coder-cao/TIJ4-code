@@ -1,4 +1,4 @@
-//: initialization/ArrayClassObj.java
+package initialization;//: initialization/ArrayClassObj.java
 // Creating an array of nonprimitive objects.
 import java.util.*;
 import static net.mindview.util.Print.*;

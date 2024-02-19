@@ -1,4 +1,4 @@
-//: containers/QueueBehavior.java
+package containers;//: containers/QueueBehavior.java
 // Compares the behavior of some of the queues
 import java.util.concurrent.*;
 import java.util.*;

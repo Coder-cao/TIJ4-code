@@ -1,4 +1,4 @@
-//: generics/Holder1.java
+package generics;//: generics/Holder1.java
 
 class Automobile {}
 

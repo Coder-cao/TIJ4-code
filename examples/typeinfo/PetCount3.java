@@ -1,4 +1,4 @@
-//: typeinfo/PetCount3.java
+package typeinfo;//: typeinfo/PetCount3.java
 // Using isInstance()
 import typeinfo.pets.*;
 import java.util.*;

@@ -1,4 +1,4 @@
-//: initialization/InitialValues.java
+package initialization;//: initialization/InitialValues.java
 // Shows default initial values.
 import static net.mindview.util.Print.*;
 

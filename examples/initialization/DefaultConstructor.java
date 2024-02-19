@@ -1,4 +1,4 @@
-//: initialization/DefaultConstructor.java
+package initialization;//: initialization/DefaultConstructor.java
 
 class Bird {}
 

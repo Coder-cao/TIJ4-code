@@ -1,4 +1,4 @@
-//: object/Documentation1.java
+package object;//: object/Documentation1.java
 /** A class comment */
 public class Documentation1 {
   /** A field comment */

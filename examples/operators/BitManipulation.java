@@ -1,4 +1,4 @@
-//: operators/BitManipulation.java
+package operators;//: operators/BitManipulation.java
 // Using the bitwise operators.
 import java.util.*;
 import static net.mindview.util.Print.*;

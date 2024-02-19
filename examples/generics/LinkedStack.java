@@ -1,4 +1,4 @@
-//: generics/LinkedStack.java
+package generics;//: generics/LinkedStack.java
 // A stack implemented with an internal linked structure.
 
 public class LinkedStack<T> {

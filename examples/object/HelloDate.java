@@ -1,4 +1,4 @@
-//: object/HelloDate.java
+package object;//: object/HelloDate.java
 import java.util.*;
 
 /** The first Thinking in Java example program.

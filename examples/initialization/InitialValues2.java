@@ -1,4 +1,4 @@
-//: initialization/InitialValues2.java
+package initialization;//: initialization/InitialValues2.java
 // Providing explicit initial values.
 
 public class InitialValues2 {

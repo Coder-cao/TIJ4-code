@@ -1,4 +1,4 @@
-//: innerclasses/Parcel6.java
+package innerclasses;//: innerclasses/Parcel6.java
 // Nesting a class within a scope.
 
 public class Parcel6 {

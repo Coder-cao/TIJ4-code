@@ -1,4 +1,4 @@
-//: gui/MessageBoxes.java
+package gui;//: gui/MessageBoxes.java
 // Demonstrates JOptionPane.
 import javax.swing.*;
 import java.awt.*;

@@ -1,4 +1,4 @@
-//: gui/Button2.java
+package gui;//: gui/Button2.java
 // Responding to button presses.
 import javax.swing.*;
 import java.awt.*;

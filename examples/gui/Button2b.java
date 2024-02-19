@@ -1,4 +1,4 @@
-//: gui/Button2b.java
+package gui;//: gui/Button2b.java
 // Using anonymous inner classes.
 import javax.swing.*;
 import java.awt.*;

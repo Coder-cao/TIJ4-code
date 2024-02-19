@@ -1,4 +1,4 @@
-//: gui/RadioButtons.java
+package gui;//: gui/RadioButtons.java
 // Using JRadioButtons.
 import javax.swing.*;
 import java.awt.*;

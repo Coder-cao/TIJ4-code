@@ -1,4 +1,4 @@
-//: exceptions/Rethrowing.java
+package exceptions;//: exceptions/Rethrowing.java
 // Demonstrating fillInStackTrace()
 
 public class Rethrowing {

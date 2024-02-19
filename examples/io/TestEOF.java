@@ -1,4 +1,4 @@
-//: io/TestEOF.java
+package io;//: io/TestEOF.java
 // Testing for end of file while reading a byte at a time.
 import java.io.*;
 

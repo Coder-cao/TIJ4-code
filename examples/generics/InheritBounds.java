@@ -1,4 +1,4 @@
-//: generics/InheritBounds.java
+package generics;//: generics/InheritBounds.java
 
 class HoldItem<T> {
   T item;

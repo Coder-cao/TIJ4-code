@@ -1,4 +1,4 @@
-//: io/GetChannel.java
+package io;//: io/GetChannel.java
 // Getting channels from streams
 import java.nio.*;
 import java.nio.channels.*;

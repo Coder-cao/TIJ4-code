@@ -1,4 +1,4 @@
-//: strings/Groups.java
+package strings;//: strings/Groups.java
 import java.util.regex.*;
 import static net.mindview.util.Print.*;
 

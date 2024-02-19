@@ -1,4 +1,4 @@
-//: operators/Precedence.java
+package operators;//: operators/Precedence.java
 
 public class Precedence {
   public static void main(String[] args) {

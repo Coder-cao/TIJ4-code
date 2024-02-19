@@ -1,4 +1,4 @@
-//: enumerated/Reflection.java
+package enumerated;//: enumerated/Reflection.java
 // Analyzing enums using reflection.
 import java.lang.reflect.*;
 import java.util.*;

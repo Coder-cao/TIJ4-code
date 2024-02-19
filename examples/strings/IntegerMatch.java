@@ -1,4 +1,4 @@
-//: strings/IntegerMatch.java
+package strings;//: strings/IntegerMatch.java
 
 public class IntegerMatch {
   public static void main(String[] args) {

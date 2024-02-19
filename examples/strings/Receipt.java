@@ -1,4 +1,4 @@
-//: strings/Receipt.java
+package strings;//: strings/Receipt.java
 import java.util.*;
 
 public class Receipt {

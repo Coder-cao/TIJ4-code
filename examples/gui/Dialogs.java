@@ -1,4 +1,4 @@
-//: gui/Dialogs.java
+package gui;//: gui/Dialogs.java
 // Creating and using Dialog Boxes.
 import javax.swing.*;
 import java.awt.*;

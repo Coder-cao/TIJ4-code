@@ -1,4 +1,4 @@
-//: io/MemoryInput.java
+package io;//: io/MemoryInput.java
 import java.io.*;
 
 public class MemoryInput {

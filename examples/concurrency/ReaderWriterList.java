@@ -1,4 +1,4 @@
-//: concurrency/ReaderWriterList.java
+package concurrency;//: concurrency/ReaderWriterList.java
 import java.util.concurrent.*;
 import java.util.concurrent.locks.*;
 import java.util.*;

@@ -1,4 +1,4 @@
-//: strings/Rudolph.java
+package strings;//: strings/Rudolph.java
 
 public class Rudolph {
   public static void main(String[] args) {

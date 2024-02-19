@@ -1,4 +1,4 @@
-//: operators/EqualsMethod2.java
+package operators;//: operators/EqualsMethod2.java
 // Default equals() does not compare contents.
 
 class Value {

@@ -1,4 +1,4 @@
-//: operators/EqualsMethod.java
+package operators;//: operators/EqualsMethod.java
 
 public class EqualsMethod {
   public static void main(String[] args) {

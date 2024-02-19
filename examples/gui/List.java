@@ -1,4 +1,4 @@
-//: gui/List.java
+package gui;//: gui/List.java
 import javax.swing.*;
 import javax.swing.border.*;
 import javax.swing.event.*;

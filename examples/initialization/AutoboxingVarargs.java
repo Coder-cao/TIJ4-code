@@ -1,4 +1,4 @@
-//: initialization/AutoboxingVarargs.java
+package initialization;//: initialization/AutoboxingVarargs.java
 
 public class AutoboxingVarargs {
   public static void f(Integer... args) {

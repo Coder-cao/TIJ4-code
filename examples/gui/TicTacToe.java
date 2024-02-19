@@ -1,4 +1,4 @@
-//: gui/TicTacToe.java
+package gui;//: gui/TicTacToe.java
 // Dialog boxes and creating your own components.
 import javax.swing.*;
 import java.awt.*;

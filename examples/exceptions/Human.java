@@ -1,4 +1,4 @@
-//: exceptions/Human.java
+package exceptions;//: exceptions/Human.java
 // Catching exception hierarchies.
 
 class Annoyance extends Exception {}

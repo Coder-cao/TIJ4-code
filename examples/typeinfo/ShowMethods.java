@@ -1,4 +1,4 @@
-//: typeinfo/ShowMethods.java
+package typeinfo;//: typeinfo/ShowMethods.java
 // Using reflection to show all the methods of a class,
 // even if the methods are defined in the base class.
 // {Args: ShowMethods}

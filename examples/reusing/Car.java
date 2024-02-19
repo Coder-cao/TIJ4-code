@@ -1,4 +1,4 @@
-//: reusing/Car.java
+package reusing;//: reusing/Car.java
 // Composition with public objects.
 
 class Engine {

@@ -1,4 +1,4 @@
-//: interfaces/Adventure.java
+package interfaces;//: interfaces/Adventure.java
 // Multiple interfaces.
 
 interface CanFight {

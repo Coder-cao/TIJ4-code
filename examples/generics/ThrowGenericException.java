@@ -1,4 +1,4 @@
-//: generics/ThrowGenericException.java
+package generics;//: generics/ThrowGenericException.java
 import java.util.*;
 
 interface Processor<T,E extends Exception> {

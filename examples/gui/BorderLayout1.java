@@ -1,4 +1,4 @@
-//: gui/BorderLayout1.java
+package gui;//: gui/BorderLayout1.java
 // Demonstrates BorderLayout.
 import javax.swing.*;
 import java.awt.*;

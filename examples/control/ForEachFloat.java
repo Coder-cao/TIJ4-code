@@ -1,4 +1,4 @@
-//: control/ForEachFloat.java
+package control;//: control/ForEachFloat.java
 import java.util.*;
 
 public class ForEachFloat {

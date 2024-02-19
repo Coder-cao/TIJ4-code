@@ -1,4 +1,4 @@
-//: gui/TabbedPane1.java
+package gui;//: gui/TabbedPane1.java
 // Demonstrates the Tabbed Pane.
 import javax.swing.*;
 import javax.swing.event.*;

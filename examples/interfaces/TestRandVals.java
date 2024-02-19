@@ -1,4 +1,4 @@
-//: interfaces/TestRandVals.java
+package interfaces;//: interfaces/TestRandVals.java
 import static net.mindview.util.Print.*;
 
 public class TestRandVals {

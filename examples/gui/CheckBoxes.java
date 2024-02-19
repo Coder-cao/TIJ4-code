@@ -1,4 +1,4 @@
-//: gui/CheckBoxes.java
+package gui;//: gui/CheckBoxes.java
 // Using JCheckBoxes.
 import javax.swing.*;
 import java.awt.*;

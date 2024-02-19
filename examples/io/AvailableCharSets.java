@@ -1,4 +1,4 @@
-//: io/AvailableCharSets.java
+package io;//: io/AvailableCharSets.java
 // Displays Charsets and aliases
 import java.nio.charset.*;
 import java.util.*;

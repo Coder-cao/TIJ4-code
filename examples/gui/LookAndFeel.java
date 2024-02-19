@@ -1,4 +1,4 @@
-//: gui/LookAndFeel.java
+package gui;//: gui/LookAndFeel.java
 // Selecting different looks & feels.
 // {Args: motif}
 import javax.swing.*;

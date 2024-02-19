@@ -1,4 +1,4 @@
-//: operators/Bool.java
+package operators;//: operators/Bool.java
 // Relational and logical operators.
 import java.util.*;
 import static net.mindview.util.Print.*;

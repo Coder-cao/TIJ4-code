@@ -1,4 +1,4 @@
-//: concurrency/InterruptingIdiom.java
+package concurrency;//: concurrency/InterruptingIdiom.java
 // General idiom for interrupting a task.
 // {Args: 1100}
 import java.util.concurrent.*;

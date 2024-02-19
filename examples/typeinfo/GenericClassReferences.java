@@ -1,4 +1,4 @@
-//: typeinfo/GenericClassReferences.java
+package typeinfo;//: typeinfo/GenericClassReferences.java
 
 public class GenericClassReferences {
   public static void main(String[] args) {

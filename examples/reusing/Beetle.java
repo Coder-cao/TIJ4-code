@@ -1,4 +1,4 @@
-//: reusing/Beetle.java
+package reusing;//: reusing/Beetle.java
 // The full process of initialization.
 import static net.mindview.util.Print.*;
 

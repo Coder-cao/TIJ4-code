@@ -1,4 +1,4 @@
-//: operators/StringOperators.java
+package operators;//: operators/StringOperators.java
 import static net.mindview.util.Print.*;
 
 public class StringOperators {

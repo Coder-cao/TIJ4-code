@@ -1,4 +1,4 @@
-//: concurrency/SelfManaged.java
+package concurrency;//: concurrency/SelfManaged.java
 // A Runnable containing its own driver Thread.
 
 public class SelfManaged implements Runnable {

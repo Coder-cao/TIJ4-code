@@ -1,4 +1,4 @@
-//: exceptions/MainException.java
+package exceptions;//: exceptions/MainException.java
 import java.io.*;
 
 public class MainException {

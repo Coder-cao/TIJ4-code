@@ -1,4 +1,4 @@
-//: strings/DatabaseException.java
+package strings;//: strings/DatabaseException.java
 
 public class DatabaseException extends Exception {
   public DatabaseException(int transactionID, int queryID,

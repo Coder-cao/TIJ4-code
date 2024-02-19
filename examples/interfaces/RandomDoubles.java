@@ -1,4 +1,4 @@
-//: interfaces/RandomDoubles.java
+package interfaces;//: interfaces/RandomDoubles.java
 import java.util.*;
 
 public class RandomDoubles {

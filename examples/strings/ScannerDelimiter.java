@@ -1,4 +1,4 @@
-//: strings/ScannerDelimiter.java
+package strings;//: strings/ScannerDelimiter.java
 import java.util.*;
 
 public class ScannerDelimiter {

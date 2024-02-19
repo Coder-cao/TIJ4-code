@@ -1,4 +1,4 @@
-//: exceptions/LoggingExceptions.java
+package exceptions;//: exceptions/LoggingExceptions.java
 // An exception that reports through a Logger.
 import java.util.logging.*;
 import java.io.*;

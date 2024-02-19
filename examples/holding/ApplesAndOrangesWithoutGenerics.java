@@ -1,4 +1,4 @@
-//: holding/ApplesAndOrangesWithoutGenerics.java
+package holding;//: holding/ApplesAndOrangesWithoutGenerics.java
 // Simple container example (produces compiler warnings).
 // {ThrowsException}
 import java.util.*;

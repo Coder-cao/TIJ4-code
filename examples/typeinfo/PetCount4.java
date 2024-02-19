@@ -1,4 +1,4 @@
-//: typeinfo/PetCount4.java
+package typeinfo;//: typeinfo/PetCount4.java
 import typeinfo.pets.*;
 import net.mindview.util.*;
 import static net.mindview.util.Print.*;

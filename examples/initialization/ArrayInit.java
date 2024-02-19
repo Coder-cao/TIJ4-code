@@ -1,4 +1,4 @@
-//: initialization/ArrayInit.java
+package initialization;//: initialization/ArrayInit.java
 // Array initialization.
 import java.util.*;
 
