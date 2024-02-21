@@ -1,4 +1,4 @@
-//: annotations/SimulatingNull.java
+package annotations;//: annotations/SimulatingNull.java
 import java.lang.annotation.*;
 
 @Target(ElementType.METHOD)
