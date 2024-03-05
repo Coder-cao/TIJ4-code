@@ -1,7 +1,6 @@
 package src.my.test.leetcode;
 
-import java.util.ArrayList;
-import java.util.List;
+import java.util.*;
 
 class Solution {
 
@@ -131,6 +130,97 @@ class Solution {
 
         }
         return result.reverse().toString();
+    }
+
+
+    public int countQuadruplets(int[] nums) {
+        class ThreeSum {
+            int sum(int target, int[] nums) {
+                int sumCount = 0;
+                for (int i = 0; i <= nums.length - 3; i++) {
+                    for (int j = i + 1; j <= nums.length - 2; j++) {
+                        for (int k = j + 1; k <= nums.length - 1; k++) {
+                            if (nums[i] + nums[j] + nums[k] == target) {
+                                sumCount++;
+                            }
+                        }
+                    }
+                }
+                return sumCount;
+            }
+        }
+        int result = 0;
+        if (nums.length < 4) {
+            return result;
+        }
+        for (int i = nums.length - 1; i > 2; i--) {
+            ThreeSum threeSum = new ThreeSum();
+            result += threeSum.sum(nums[i], Arrays.copyOfRange(nums, 0, i));
+        }
+        return result;
+    }
+
+    public int[] findEvenNumbers(int[] digits) {
+
+        class Help {
+            Integer get(int i, int j, int k) {
+                if (i == 0 || k % 2 == 1) {
+                    return null;
+                }
+                return i * 100 + j * 10 + k;
+            }
+        }
+
+        Help help = new Help();
+
+        Map<Integer, Integer> integerIntegerMap = new HashMap<Integer, Integer>();
+        for (int i = 0; i <= digits.length - 3; i++) {
+            for (int j = i + 1; j <= digits.length - 2; j++) {
+                for (int k = j + 1; k <= digits.length - 1; k++) {
+
+                    Integer integer1 = help.get(digits[i], digits[j], digits[k]);
+                    if (integer1 != null) {
+                        integerIntegerMap.put(integer1, integer1);
+                    }
+                    integer1 = help.get(digits[i], digits[k], digits[j]);
+                    if (integer1 != null) {
+                        integerIntegerMap.put(integer1, integer1);
+                    }
+                    integer1 = help.get(digits[j], digits[i], digits[k]);
+                    if (integer1 != null) {
+                        integerIntegerMap.put(integer1, integer1);
+                    }
+                    integer1 = help.get(digits[j], digits[k], digits[i]);
+                    if (integer1 != null) {
+                        integerIntegerMap.put(integer1, integer1);
+                    }
+                    integer1 = help.get(digits[k], digits[i], digits[j]);
+                    if (integer1 != null) {
+                        integerIntegerMap.put(integer1, integer1);
+                    }
+                    integer1 = help.get(digits[k], digits[j], digits[i]);
+                    if (integer1 != null) {
+                        integerIntegerMap.put(integer1, integer1);
+                    }
+
+                }
+            }
+        }
+        int[] result = new int[integerIntegerMap.keySet().size()];
+        int i = 0;
+        for (Integer integer : integerIntegerMap.keySet()) {
+            result[i] = integer;
+            i++;
+        }
+        Arrays.sort(result);
+        return result;
+    }
+
+
+    public double findMedianSortedArrays(int[] nums1, int[] nums2) {
+        double result = 0.0;
+
+        return result;
     }
 
 

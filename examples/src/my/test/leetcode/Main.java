@@ -19,11 +19,11 @@ public class Main {
 //        testPtr(listNode,list12);
 
 
-        String bin1 = "11010";
-        String bin2 =   "100";
-
-        String s = solution.addBinary(bin1, bin2);
-        print(s);
+        int[] sums = {2,2,8,8,2};
+        int[] evenNumbers = solution.findEvenNumbers(sums);
+        for (int i = 0; i < evenNumbers.length; i++) {
+            print(evenNumbers[i]);
+        }
 
     }
 
