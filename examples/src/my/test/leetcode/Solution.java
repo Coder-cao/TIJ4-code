@@ -217,10 +217,106 @@ class Solution {
     }
 
 
-    public double findMedianSortedArrays(int[] nums1, int[] nums2) {
-        double result = 0.0;
+    /**
+     * 回文数
+     *
+     * @param x
+     * @return
+     */
+    public boolean isPalindrome(int x) {
+        if (x < 0) {
+            return false;
+        }
+        String str = x + "";
+        for (int i = 0; i < str.length() / 2; i++) {
+            boolean b = str.charAt(i) == str.charAt(str.length() - i - 1);
+            if (!b) {
+                return false;
+            }
+        }
+        return true;
+    }
 
-        return result;
+
+    /**
+     * 给你一个 非严格递增排列 的数组 nums ，
+     * 请你 原地 删除重复出现的元素，使每个元素 只出现一次 ，
+     * 返回删除后数组的新长度。元素的 相对顺序 应该保持 一致 。
+     * 然后返回 nums 中唯一元素的个数。
+     *
+     * @param nums
+     * @return
+     */
+    public int removeDuplicates(int[] nums) {
+        int cur;
+        int count = 1;
+        tag:
+        for (int i = 0; i < nums.length; i++) {
+            cur = nums[i];
+            for (int j = i + 1; j < nums.length; j++) {
+                if (cur < nums[j]) {
+                    nums[i + 1] = nums[j];
+                    count++;
+                    continue tag;
+                }
+                if (j == nums.length - 1) {
+                    break tag;
+                }
+            }
+        }
+        for (int i = count; i < nums.length; i++) {
+            nums[i] = 0;
+        }
+        return count;
+    }
+
+    /**
+     * 给你一个数组 nums 和一个值 val，你需要 原地 移除所有数值等于 val 的元素，并返回移除后数组的新长度。
+     * <p>
+     * 不要使用额外的数组空间，你必须仅使用 O(1) 额外空间并 原地 修改输入数组。
+     * <p>
+     * 元素的顺序可以改变。你不需要考虑数组中超出新长度后面的元素。
+     *
+     * @param nums
+     * @param val
+     * @return
+     */
+    public int removeElement(int[] nums, int val) {
+        int j = 0;
+        for (int i = 0; i < nums.length; i++) {
+            if (nums[i] != val) {
+                nums[j] = nums[i];
+                j++;
+            }
+        }
+        return j;
+    }
+
+
+    /**
+     * 假设你正在爬楼梯。需要 n 阶你才能到达楼顶。
+     * <p>
+     * 每次你可以爬 1 或 2 个台阶。你有多少种不同的方法可以爬到楼顶呢？
+     *
+     * @param n
+     * @return
+     */
+    public int climbStairs(int n) {
+        int[] memo = new int[n + 1];
+        return climbStairsHelper(n, memo);
+    }
+
+    private int climbStairsHelper(int n, int[] memo) {
+        if (n == 1) {
+            return 1;
+        } else if (n == 2) {
+            return 2;
+        } else if (memo[n] != 0) {
+            return memo[n];
+        } else {
+            memo[n] = climbStairsHelper(n - 1, memo) + climbStairsHelper(n - 2, memo);
+            return memo[n];
+        }
     }
 
 
