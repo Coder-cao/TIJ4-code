@@ -1,9 +1,19 @@
 package src.my.test.leetcode;
 
-import static net.mindview.util.Print.print;
-
 public class Main {
     public static void main(String[] args) {
+
+//        BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+//
+//        System.out.println("请输入一行文本：");
+//
+//        try {
+//            String input = reader.readLine();
+//            System.out.println("您输入的内容是：" + input);
+//        } catch (IOException e) {
+//            System.err.println("发生异常：" + e.getMessage());
+//        }
+
         Solution solution = new Solution();
 //        boolean valid = solution.isValid("(]");
 //        System.out.println(
@@ -19,11 +29,11 @@ public class Main {
 //        testPtr(listNode,list12);
 
 
-        int[] sums = {2,2,8,8,2};
-        int[] evenNumbers = solution.findEvenNumbers(sums);
-        for (int i = 0; i < evenNumbers.length; i++) {
-            print(evenNumbers[i]);
-        }
+        int param = 27;
+        solution.isPowerOfThree(param);
+
+        int name = 0;
+        String oldName = "";
 
     }
 

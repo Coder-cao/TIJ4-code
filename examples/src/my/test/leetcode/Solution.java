@@ -319,5 +319,199 @@ class Solution {
         }
     }
 
+    /**
+     * 给定一个大小为 n 的数组 nums ，返回其中的多数元素。多数元素是指在数组中出现次数 大于 ⌊ n/2 ⌋ 的元素。
+     * <p>
+     * 你可以假设数组是非空的，并且给定的数组总是存在多数元素。
+     *
+     * @param nums
+     * @return
+     */
+    public int majorityElement(int[] nums) {
+        Map<Integer, Integer> map = new HashMap<>();
+        for (int i = 0; i < nums.length; i++) {
+            Integer integer = map.get(nums[i]);
+            if (integer == null) {
+                integer = 0;
+            }
+            map.put(nums[i], integer + 1);
+            if (integer + 1 > nums.length / 2) {
+                return nums[i];
+            }
+        }
+        return 0;
+    }
+
+
+    /**
+     * @param candyType
+     * @return
+     */
+    public int distributeCandies(int[] candyType) {
+        Set<Integer> integerSet = new HashSet<>();
+        for (int i = 0; i < candyType.length; i++) {
+            integerSet.add(candyType[i]);
+        }
+        return Math.min(integerSet.size(), candyType.length / 2);
+    }
+
+    /**
+     * 给你一个字符串 s，由若干单词组成，单词前后用一些空格字符隔开。返回字符串中 最后一个 单词的长度。
+     * <p>
+     * 单词 是指仅由字母组成、不包含任何空格字符的最大
+     * 子字符串
+     * 。
+     *
+     * @param s
+     * @return
+     */
+    public int lengthOfLastWord(String s) {
+        int index = s.length();
+        for (int i = s.length() - 1; i >= 0; i--) {
+            if (' ' == s.charAt(i)) {
+                if (i == index - 1) {
+                    index = i;
+                    continue;
+                }
+                return index - i - 1;
+            }
+        }
+        return index;
+    }
+
+
+    /**
+     * 给定一个由 整数 组成的 非空 数组所表示的非负整数，在该数的基础上加一。
+     * <p>
+     * 最高位数字存放在数组的首位， 数组中每个元素只存储单个数字。
+     * <p>
+     * 你可以假设除了整数 0 之外，这个整数不会以零开头。
+     *
+     * @param digits
+     * @return
+     */
+    public int[] plusOneV2(int[] digits) {
+        int lowPlusBit = 1;
+        for (int i = digits.length - 1; i >= 0; i--) {
+            int bit = (digits[i] + lowPlusBit) % 10;
+            if (bit == 0) {
+                digits[i] = 0;
+            } else {
+                digits[i] = bit;
+                return digits;
+            }
+
+        }
+        int[] res = new int[digits.length + 1];
+        res[0] = 1;
+        return res;
+    }
+
+    /**
+     * 给你一个非负整数 x ，计算并返回 x 的 算术平方根 。
+     * <p>
+     * 由于返回类型是整数，结果只保留 整数部分 ，小数部分将被 舍去 。
+     * <p>
+     * 注意：不允许使用任何内置指数函数和算符，例如 pow(x, 0.5) 或者 x ** 0.5 。
+     *
+     * @param x
+     * @return
+     */
+    public int mySqrt(int x) {
+        long max = x / 2 + 2;
+        long min = 0;
+        while (true) {
+            if (max == min + 1) {
+                return (int) min;
+            }
+            long temp = (min + max) / 2;
+            if (temp * temp > x) {
+                max = temp;
+                continue;
+            }
+            min = temp;
+        }
+
+    }
+
+
+    /**
+     * 给你一个下标从 0 开始、严格递增 的整数数组 nums 和一个正整数 diff 。如果满足下述全部条件，则三元组 (i, j, k) 就是一个 算术三元组 ：
+     * <p>
+     * i < j < k ，
+     * nums[j] - nums[i] == diff 且
+     * nums[k] - nums[j] == diff
+     * 返回不同 算术三元组 的数目
+     *
+     * @param nums
+     * @param diff
+     * @return
+     */
+    public int arithmeticTriplets(int[] nums, int diff) {
+        if (nums.length < 3) {
+            return 0;
+        }
+        int res = 0;
+        for (int i = 0; i < nums.length - 2; i++) {
+            for (int j = i + 1; j < nums.length - 1; j++) {
+                for (int k = j + 1; k < nums.length; k++) {
+                    if (nums[j] - nums[i] == diff && nums[k] - nums[j] == diff) {
+                        res++;
+                    }
+                }
+            }
+        }
+        return res;
+    }
+
+
+    /**
+     * 给定一个整数，写一个函数来判断它是否是 3 的幂次方。如果是，返回 true ；否则，返回 false 。
+     * <p>
+     * 整数 n 是 3 的幂次方需满足：存在整数 x 使得 n == 3x
+     *
+     * @param n
+     * @return
+     */
+    public boolean isPowerOfThree(int n) {
+        int dp[] = new int[31];
+        int max = 0;
+        dp[0] = 1;
+        for (int i = 1; i < 31; i++) {
+            long res = 3L * dp[i - 1];
+            if (res > Integer.MAX_VALUE)
+                break;
+            dp[i] = (int) res;
+            max = i;
+        }
+        for (int i = 0; i <= max; i++) {
+            if (dp[i] == n)
+                return true;
+
+        }
+        return false;
+    }
+
+
+    /**
+     * 斐波那契数 （通常用 F(n) 表示）形成的序列称为 斐波那契数列 。该数列由 0 和 1 开始，后面的每一项数字都是前面两项数字的和。也就是：
+     * <p>
+     * F(0) = 0，F(1) = 1
+     * F(n) = F(n - 1) + F(n - 2)，其中 n > 1
+     * 给定 n ，请计算 F(n) 。
+     *
+     * @param n
+     * @return
+     */
+    public int fib(int n) {
+        int[] fib = new int[31];
+        fib[0] = 0;
+        fib[1] = 1;
+        if(n==0)
+            return fib[0];
+        if(n==1)
+            return fib[1];
+        return fib(n - 1) + fib(n - 2);
+    }
 
 }
