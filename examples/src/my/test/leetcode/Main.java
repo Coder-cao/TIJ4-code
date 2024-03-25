@@ -1,5 +1,9 @@
 package src.my.test.leetcode;
 
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+
 public class Main {
     public static void main(String[] args) {
 
@@ -29,8 +33,10 @@ public class Main {
 //        testPtr(listNode,list12);
 
 
-        int param = 27;
-        solution.isPowerOfThree(param);
+        int param = 1808548329;
+        String test = "abccccdd";
+
+        int i = solution.trailingZeroes(param);
 
         int name = 0;
         String oldName = "";

@@ -507,11 +507,119 @@ class Solution {
         int[] fib = new int[31];
         fib[0] = 0;
         fib[1] = 1;
-        if(n==0)
-            return fib[0];
-        if(n==1)
-            return fib[1];
+        if (n == 0) return fib[0];
+        if (n == 1) return fib[1];
         return fib(n - 1) + fib(n - 2);
     }
+
+
+    /**
+     * 给你一个正整数 num 。如果 num 是一个完全平方数，则返回 true ，否则返回 false 。
+     * <p>
+     * 完全平方数 是一个可以写成某个整数的平方的整数。换句话说，它可以写成某个整数和自身的乘积。
+     * <p>
+     * 不能使用任何内置的库函数，如  sqrt
+     *
+     * @param num
+     * @return
+     */
+    public boolean isPerfectSquare(int num) {
+        for (int i = 0; i < (num + 1) / 2 + 1; i++) {
+            if (i * i == num) {
+                return true;
+            }
+        }
+        return false;
+    }
+
+
+    /**
+     * 给定一个包含大写字母和小写字母的字符串 s ，返回 通过这些字母构造成的 最长的回文串 。
+     * <p>
+     * 在构造过程中，请注意 区分大小写 。比如 "Aa" 不能当做一个回文字符串。
+     *
+     * @param s
+     * @return
+     */
+    public int longestPalindrome(String s) {
+        Map<Character, Integer> map = new HashMap<>();
+        for (int i = 0; i < s.length(); i++) {
+            char key = s.charAt(i);
+            map.merge(key, 1, Integer::sum);
+        }
+        int res = 0;
+        int haveMid = 0;
+        for (Integer value : map.values()) {
+            if (value % 2 == 0) {
+                res = res + value;
+                continue;
+            }
+            res = res + value - 1;
+            haveMid++;
+        }
+        if (haveMid > 0) {
+            res++;
+        }
+        return res;
+    }
+
+    /**
+     * 给定一个数组 prices ，它的第 i 个元素 prices[i] 表示一支给定股票第 i 天的价格。
+     * <p>
+     * 你只能选择 某一天 买入这只股票，并选择在 未来的某一个不同的日子 卖出该股票。设计一个算法来计算你所能获取的最大利润。
+     * <p>
+     * 返回你可以从这笔交易中获取的最大利润。如果你不能获取任何利润，返回 0 。
+     *
+     * @param prices
+     * @return
+     */
+    public int maxProfit(int[] prices) {
+        int min = prices[0];
+        int res = 0;
+        for (int i = 0; i < prices.length; i++) {
+            if (prices[i] > min + res) {
+                res = prices[i] - min;
+            }
+            if (min > prices[i]) {
+                min = prices[i];
+            }
+        }
+        return res;
+    }
+
+    /**
+     * 设计一个算法，算出 n 阶乘有多少个尾随零。
+     */
+    public int trailingZeroes(int n) {
+        int res = 0;
+        int count_2 = 0;
+        int count_5 = 0;
+        for (int i = 1; i <= n; i++) {
+            int temp = i;
+            while (temp % 2 == 0) {
+                temp = temp / 2;
+                if (count_5 > 0) {
+                    count_5--;
+                    res++;
+                } else {
+                    count_2++;
+                }
+            }
+            while (temp % 5 == 0) {
+                temp = temp / 5;
+                if (count_2 > 0) {
+                    count_2--;
+                    res++;
+                } else {
+                    count_5++;
+                }
+            }
+        }
+        return res;
+    }
+
+
+
+
 
 }
