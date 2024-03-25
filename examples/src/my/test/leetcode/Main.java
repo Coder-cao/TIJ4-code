@@ -34,9 +34,10 @@ public class Main {
 
 
         int param = 1808548329;
-        String test = "abccccdd";
+        String text = "hello world";
+        String brokenLetters = "ad";
 
-        int i = solution.trailingZeroes(param);
+        int i = solution.canBeTypedWords(text,brokenLetters);
 
         int name = 0;
         String oldName = "";
