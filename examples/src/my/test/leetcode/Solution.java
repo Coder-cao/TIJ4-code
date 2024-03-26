@@ -648,4 +648,52 @@ class Solution {
     }
 
 
+    /**
+     * 给定一个已排序的链表的头 head ， 删除所有重复的元素，使每个元素只出现一次 。返回 已排序的链表 。
+     *
+     * @param head
+     * @return
+     */
+    public ListNode deleteDuplicates(ListNode head) {
+        ListNode res = head;
+        if (res == null)
+            return null;
+        while (head.next != null) {
+            if (head.val == head.next.val) {
+                head.next = head.next.next;
+            } else {
+                head = head.next;
+            }
+        }
+        return res;
+    }
+
+
+    /**
+     * 给定一个非负整数 numRows，生成「杨辉三角」的前 numRows 行。
+     * <p>
+     * 在「杨辉三角」中，每个数是它左上方和右上方的数的和。
+     *
+     * @param numRows
+     * @return
+     */
+    public List<List<Integer>> generate(int numRows) {
+        List<List<Integer>> result = new ArrayList<>();
+        List<Integer> first = new ArrayList<>(1);
+        first.add(1);
+        result.add(first);
+        for (int i = 1; i < numRows; i++) {
+            List<Integer> integerList = result.get(i - 1);
+            List<Integer> temp = new ArrayList<>(i+1);
+            temp.add(0, 1);
+            for (int j = 1; j < i ; j++) {
+                temp.add(j, integerList.get(j - 1) + integerList.get(j));
+            }
+            temp.add(i, 1);
+            result.add(i, temp);
+        }
+        return result;
+    }
+
+
 }

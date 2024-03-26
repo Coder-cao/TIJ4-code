@@ -3,6 +3,7 @@ package src.my.test.leetcode;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
+import java.util.List;
 
 public class Main {
     public static void main(String[] args) {
@@ -26,7 +27,7 @@ public class Main {
 
 //        ListNode list1 = new ListNode(0, new ListNode(2, new ListNode(4, new ListNode(6, null))));
 //
-//        ListNode list12 = new ListNode(1, new ListNode(3, new ListNode(5, new ListNode(7, null))));
+        ListNode list12 = new ListNode(1, new ListNode(1, new ListNode(2, new ListNode(3, null))));
 //
 //        ListNode listNode = solution.mergeTwoLists(list1, list12);
 //
@@ -37,7 +38,7 @@ public class Main {
         String text = "hello world";
         String brokenLetters = "ad";
 
-        int i = solution.canBeTypedWords(text,brokenLetters);
+        List<List<Integer>> generate = solution.generate(5);
 
         int name = 0;
         String oldName = "";
