@@ -37,8 +37,8 @@ public class Main {
         int param = 1808548329;
         String text = "hello world";
         String brokenLetters = "ad";
-
-        List<List<Integer>> generate = solution.generate(5);
+        int[] array = {-1,0,3,5,9,12};
+        int search = solution.search(array, 2);
 
         int name = 0;
         String oldName = "";

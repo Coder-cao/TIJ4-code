@@ -684,15 +684,68 @@ class Solution {
         result.add(first);
         for (int i = 1; i < numRows; i++) {
             List<Integer> integerList = result.get(i - 1);
-            List<Integer> temp = new ArrayList<>(i+1);
+            List<Integer> temp = new ArrayList<>(i + 1);
             temp.add(0, 1);
-            for (int j = 1; j < i ; j++) {
+            for (int j = 1; j < i; j++) {
                 temp.add(j, integerList.get(j - 1) + integerList.get(j));
             }
             temp.add(i, 1);
             result.add(i, temp);
         }
         return result;
+    }
+
+    /**
+     * 如果数组是单调递增或单调递减的，那么它是 单调 的。
+     * <p>
+     * 如果对于所有 i <= j，nums[i] <= nums[j]，那么数组 nums 是单调递增的。 如果对于所有 i <= j，nums[i]> = nums[j]，那么数组 nums 是单调递减的。
+     * <p>
+     * 当给定的数组 nums 是单调数组时返回 true，否则返回 false。
+     *
+     * @param nums
+     * @return
+     */
+    public boolean isMonotonic(int[] nums) {
+        int up = 0;
+        int down = 0;
+        for (int i = 0; i < nums.length - 1; i++) {
+            if (nums[i + 1] > nums[i]) {
+                up++;
+            } else if (nums[i + 1] < nums[i]) {
+                down++;
+            }
+            if (up > 0 && down > 0) {
+                return false;
+            }
+        }
+        return true;
+    }
+
+    /**
+     * 给定一个 n 个元素有序的（升序）整型数组 nums 和一个目标值 target  ，写一个函数搜索 nums 中的 target，如果目标值存在返回下标，否则返回 -1。
+     */
+    public int search(int[] nums, int target) {
+        int min = 0;
+        int max = nums.length;
+        if (max == 0)
+            return -1;
+        if (nums[min] == target) {
+            return min;
+        }
+        if (nums[max - 1] == target) {
+            return max - 1;
+        }
+
+        while (max > min + 1) {
+            if (nums[(max + min) / 2] > target) {
+                max = (max + min) / 2;
+            } else if (nums[(max + min) / 2] < target) {
+                min = (max + min) / 2;
+            } else {
+                return (max + min) / 2;
+            }
+        }
+        return -1;
     }
 
 
